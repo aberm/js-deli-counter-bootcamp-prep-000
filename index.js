@@ -1,8 +1,12 @@
 var katzDeliLine = [];
+var counter = 1;
 
-function takeANumber(lineArray, name) {
-  lineArray.push(name);
-  return `Welcome, ${name}. You are number ${lineArray.length} in line.`
+
+function takeANumber(lineArray) {
+  var n = counter;
+  lineArray.push(n);
+  counter++;
+  return `Welcome, ${n}. You are number ${lineArray.length} in line.`
 }
 
 function currentLine(lineArray) {
